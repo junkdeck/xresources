@@ -1,0 +1,57 @@
+!!!--- urxvt settings
+
+!!!--- loginshell, for ruby / rvm
+URxvt*.loginShell:            true
+URxvt*iconFile:                /usr/share/icons/Tango/scalable/apps/gnome-terminal.svg
+!!!--- Font and general settings 
+URxvt*.font:  xft:terminus:size=14
+!URxvt*.font:  xft:Monaco:style=regular:size=12
+
+URxvt*.lineSpace: 2
+
+URxvt*.geometry:              80x32
+URxvt*.buffered:              true
+
+!!!--- Special features
+URxvt*.perl-lib:              /usr/local/lib/urxvt/perl
+URxvt*.perl-ext-common:       default,matcher
+URxvt*.keysym.C-S-Up:         perl:font:increment
+URxvt*.keysym.C-S-Down:       perl:font:decrement
+
+!--- URL Matcher
+URxvt*.url-launcher:          /etc/alternatives/x-www-browser
+URxvt*.matcher.button:        1
+URxvt*.keysym.C-Delete:       perl:matcher:last
+URxvt*.keysym.M-Delete:       perl:matcher:list
+
+!--- Scrolling
+URxvt*.scrollBar:             false
+URxvt*.scrollBar_right:       true
+URxvt*.scrollTtyOutput:       false
+URxvt*.scrollWithBuffer:      false
+URxvt*.scrollTtyKeypress:     true
+URxvt*.secondaryScroll:       true
+URxvt*.scrollBar_floating:    true
+URxvt*.scrollstyle:           rxvt
+URxvt*.saveLines:             20000
+URxvt*.searchable-scrollback: M-s
+
+!-- Shading and Fading
+URxvt*.transparent:           false
+URxvt*.shading:               50
+URxvt*.fading:                30
+!URxvt*.blurRadius:            0
+
+!--- Tabbing Menu colors
+URxvt*.tabbed.tabbar-bg:      0
+URxvt*.tabbed.tabbar-fg:      6
+URxvt*.tabbed.tab-bg:         0
+URxvt*.tabbed.tab-fg:         5
+
+URxvt*.depth: 		      32
+URxvt*.background:       [85]#222422
+URxvt*foreground:            #aafe8a
+URxvt*.underlineColor:       #4ad5e1
+URxvt*.pointerColor:         #dc74d1
+URxvt*.cursorColor:          #e0e080
+
